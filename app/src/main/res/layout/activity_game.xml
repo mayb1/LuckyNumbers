@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_bback"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonBackToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#673AB7"
+            android:layout_margin="20dp"
+            android:tag="3"
+            android:text="Back to menu" />
+
+        <Button
+            android:id="@+id/buttonExitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cornerRadius="15dp"
+            android:backgroundTint="#673AB7"
+            android:layout_margin="20dp"
+            android:tag="4"
+            android:text="Exit" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewRandom"
+        android:layout_width="118dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="425dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/five" />
+
+    <ImageView
+        android:id="@+id/imageViewFive"
+        android:layout_width="77dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/five" />
+
+    <ImageView
+        android:id="@+id/imageViewFour"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ffour" />
+
+    <ImageView
+        android:id="@+id/imageViewThree"
+        android:layout_width="73dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/three" />
+
+    <ImageView
+        android:id="@+id/imageViewTwo"
+        android:layout_width="65dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/two" />
+
+    <ImageView
+        android:id="@+id/imageViewOne"
+        android:layout_width="75dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="340dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/one" />
+</androidx.constraintlayout.widget.ConstraintLayout>
